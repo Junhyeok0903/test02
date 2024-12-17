@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로또 숫자 추첨 게임</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>로또 숫자 추첨 게임</h1>
+
+    <!-- 플레이어 이름 입력 -->
+    <div id="player-info">
+      <label for="player-name">이름을 입력하세요:</label>
+      <input type="text" id="player-name" placeholder="플레이어 이름">
+    </div>
+
+    <!-- 사용자 숫자 입력 -->
+    <div id="user-input">
+      <h3>1~45 사이의 숫자 6개를 입력하세요</h3>
+      <input type="number" class="user-number" min="1" max="45" placeholder="1" />
+      <input type="number" class="user-number" min="1" max="45" placeholder="2" />
+      <input type="number" class="user-number" min="1" max="45" placeholder="3" />
+      <input type="number" class="user-number" min="1" max="45" placeholder="4" />
+      <input type="number" class="user-number" min="1" max="45" placeholder="5" />
+      <input type="number" class="user-number" min="1" max="45" placeholder="6" />
+      <button id="start-button">추첨 시작</button>
+    </div>
+
+    <!-- 추첨된 숫자 표시 -->
+    <div id="drawn-numbers">
+      <h3>추첨된 숫자</h3>
+      <div id="numbers-container"></div>
+    </div>
+
+    <!-- 결과 표시 -->
+    <div id="result">
+      <h2>결과: <span id="ranking"></span></h2>
+    </div>
+
+    <!-- 플레이어 기록 -->
+    <div id="player-stats">
+      <h3>플레이어 등수 기록</h3>
+      <div id="stats-container"></div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

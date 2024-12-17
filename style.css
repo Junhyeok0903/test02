@@ -1,0 +1,16 @@
+#player-stats {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  #stats-container {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .stat-line {
+    margin: 5px 0;
+  }
+  
